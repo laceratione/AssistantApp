@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_til_phone" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusBottomEnd">18dp</item>
+        <item name="boxCornerRadiusBottomStart">18dp</item>
+        <item name="boxCornerRadiusTopEnd">18dp</item>
+        <item name="boxCornerRadiusTopStart">18dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/dark_gray</item>
+    </style>
+
+    <style name="style_et_phone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:fontFamily">@font/stolzl_regular</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorLink">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="shape_btn_continue">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+    
+    <style name="style_text_12">
+        <item name="android:textColor">@color/bia_gray_color_1</item>
+        <item name="fontFamily">@font/stolzl_book</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/stolzl_book</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_text_14.Blue">
+        <item name="android:textColor">@color/blue_link</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/stolzl_regular</item>
+    </style>
+
+
+    <style name="Widget.MaterialComponents.BottomNavigationView.Colored" parent="">
+        <item name="colorSecondaryContainer">@color/light_gray_blue</item>
+    </style>
+</resources>

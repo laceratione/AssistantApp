@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_task_item"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <TextView
+                style="@style/style_text_12"
+                android:text="@string/type_cargo_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="Мебель" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/city_execution_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="Москва" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/date_order_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="18.04.2023" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/arrival_time_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="12:00" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/starting_point_route_tv" />
+
+            <TextView
+                style="@style/style_text_14.Blue"
+                android:layout_marginTop="4dp"
+                android:text="Склад 51, Ул. Пушкина 1" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/end_point_route_tv" />
+
+            <TextView
+                style="@style/style_text_14.Blue"
+                android:layout_marginTop="4dp"
+                android:text="Склад 51, Ул. Пушкина 2" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/carcass_type_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="Тентованный" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/order_details_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="Прописанные детали заказа" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/payment_parameters_tv" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="4dp"
+                android:text="Прописанные параметры по оплате" />
+
+            <TextView
+                style="@style/style_text_12"
+                android:layout_marginTop="12dp"
+                android:text="@string/contacts_tv" />
+
+            <TextView
+                style="@style/style_text_14.Blue"
+                android:layout_marginTop="4dp"
+                android:text="+7 777 777 77 77" />
+
+            <TextView
+                style="@style/style_text_14"
+                android:layout_marginTop="2dp"
+                android:text="Иванов Иван Иванович" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRulesClient"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/shape_task_item"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/stolzl_regular"
+                android:text="@string/client_rules_tv"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:gravity="center"
+                app:icon="@drawable/download"
+                app:iconGravity="textStart"
+                app:iconPadding="4dp"
+                app:iconTint="@color/dark"
+                android:id="@+id/btnDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/light_gray_blue"
+                android:text="@string/btn_download_text"
+                android:textColor="@color/dark"
+                android:textSize="14sp"
+                app:shapeAppearanceOverlay="@style/shape_btn_continue" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark"
+            android:text="@string/btn_accept_text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:shapeAppearanceOverlay="@style/shape_btn_continue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRefuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/bt"
+            android:text="@string/btn_refuse_text"
+            android:textColor="@color/dark"
+            android:textSize="16sp"
+            app:shapeAppearanceOverlay="@style/shape_btn_continue" />
+
+        <LinearLayout
+            android:id="@+id/llAcceptButtons"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

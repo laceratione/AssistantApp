@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AssistantApp</string>
+
+    <string name="title_auth_tv">Помощник логиста</string>
+    <string name="welcome_text_auth_tv">Добро пожаловать в БИА. Помощник логиста</string>
+    <string name="contentdescription">contentDescription</string>
+    <string name="enter_number_tv">Введите свой номер для авторизации</string>
+    <string name="btn_continue_text">Продолжить</string>
+    <string name="hint_til_phone">Номер</string>
+    <string name="bot_nav_action_1">Задания</string>
+    <string name="bot_nav_action_2">Графики</string>
+    <string name="bot_nav_action_3">Чат</string>
+    <string name="bot_nav_action_4">Профиль</string>
+    <string name="btn_show_details_text">Посмотреть детали</string>
+    <string name="btn_download_text">Скачать</string>
+    <string name="details_task_warning_message">Для завершения заказа необходимо прикрепить документы</string>
+    <string name="btn_add_photo_text">Добавить фото</string>
+    <string name="incident_subtitle_text">Выберите, что произошло</string>
+    <string name="btn_save_text">Сохранить</string>
+
+    <string name="tasks_toolbar_title">Задания</string>
+    <string name="schedule_toolbar_title">График смен</string>
+    <string name="profile_toolbar_title">Профиль</string>
+    <string name="incident_toolbar_title">Инцидент</string>
+    <string name="documents_toolbar_title">Документы</string>
+    <string name="details_toolbar_title">Детали задания</string>
+    <string name="chat_toolbar_title">Чат</string>
+
+    <string name="btn_incident_text">Инцидент</string>
+    <string name="btn_error_text">Ошибка</string>
+    <string name="btn_pin_documents_text">Прикрепить документы</string>
+    <string name="btn_order_complete_text">Завершить заказ</string>
+    <string name="btn_refuse_task_text">Отказаться от задания</string>
+
+    <string name="type_cargo_tv">Тип груза</string>
+    <string name="city_execution_tv">Город исполнения</string>
+    <string name="date_order_tv">Дата заказа</string>
+    <string name="arrival_time_tv">Время прибытия</string>
+    <string name="starting_point_route_tv">Начальная точка маршрута</string>
+    <string name="end_point_route_tv">Конечная точка маршрута</string>
+    <string name="carcass_type_tv">Тип кузова</string>
+    <string name="order_details_tv">Детали заказа</string>
+    <string name="payment_parameters_tv">Параметры по оплате</string>
+    <string name="contacts_tv">Контакты</string>
+    <string name="client_rules_tv">Правила клиента</string>
+
+    <string name="btn_accept_text">Принять</string>
+    <string name="btn_refuse_text">Отказаться</string>
+    <string name="problem_address_tb">Проблема на адресе</string>
+    <string name="problem_way_tb">Проблема в пути</string>
+    <string name="problem_loading_goods_tb">Проблема на загрузке</string>
+</resources>

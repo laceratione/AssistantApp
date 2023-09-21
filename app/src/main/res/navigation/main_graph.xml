@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="ru.android.assistantapp.auth.AuthFragment"
+        android:label="AuthFragment"
+        tools:layout="@layout/fragment_auth"/>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="ru.android.assistantapp.tasks.TasksFragment"
+        android:label="TasksFragment"
+        tools:layout="@layout/fragment_tasks">
+        <action
+            android:id="@+id/action_tasksFragment_to_detailsTaskFragment"
+            app:destination="@id/detailsTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsTaskFragment"
+        android:name="ru.android.assistantapp.detailstask.DetailsTaskFragment"
+        android:label="DetailsTaskFragment"
+        tools:layout="@layout/fragment_details_task">
+        <action
+            android:id="@+id/action_detailsTaskFragment_to_documentsFragment"
+            app:destination="@id/documentsFragment" />
+        <action
+            android:id="@+id/action_detailsTaskFragment_to_incidentFragment"
+            app:destination="@id/incidentFragment" />
+        <argument
+            android:name="task"
+            app:argType="ru.android.assistantapp.domain.Task" />
+        <argument
+            android:name="pos"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="ru.android.assistantapp.documents.DocumentsFragment"
+        android:label="DocumentsFragment"
+        tools:layout="@layout/fragment_documents"/>
+    <fragment
+        android:id="@+id/incidentFragment"
+        android:name="ru.android.assistantapp.incident.IncidentFragment"
+        android:label="IncidentFragment"
+        tools:layout="@layout/fragment_incident"/>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="ru.android.assistantapp.schedule.ScheduleFragment"
+        android:label="ScheduleFragment"
+        tools:layout="@layout/fragment_schedule"/>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="ru.android.assistantapp.chat.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.android.assistantapp.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

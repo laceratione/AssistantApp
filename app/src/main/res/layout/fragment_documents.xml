@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp">
+
+    <TextView
+        android:id="@+id/tvWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/stolzl_regular"
+        android:text="@string/details_task_warning_message"
+        android:textColor="@color/dark"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_below="@id/tvWarning"
+        android:layout_marginTop="12dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/shape_task_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="doc1.jpeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:drawableEndCompat="@drawable/ic_close" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:text="doc2.jpeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:drawableEndCompat="@drawable/ic_close" />
+
+        <com.google.android.material.button.MaterialButton
+            android:gravity="center"
+            app:icon="@drawable/attach"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp"
+            app:iconTint="@color/dark"
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/light_gray_blue"
+            android:text="@string/btn_add_photo_text"
+            android:textColor="@color/dark"
+            android:textSize="14sp"
+            app:shapeAppearanceOverlay="@style/shape_btn_continue" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnCompleteOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark"
+        android:text="@string/btn_order_complete_text"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:shapeAppearanceOverlay="@style/shape_btn_continue" />
+</RelativeLayout>
