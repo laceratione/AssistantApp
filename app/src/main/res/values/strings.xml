@@ -49,4 +49,6 @@
     <string name="problem_address_tb">Проблема на адресе</string>
     <string name="problem_way_tb">Проблема в пути</string>
     <string name="problem_loading_goods_tb">Проблема на загрузке</string>
+    <string name="work_finished_tv">Работа выполнена</string>
+    <string name="desc_work_finished_tv">Задание было успешно\nвыполнено</string>
 </resources>

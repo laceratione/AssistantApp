@@ -5,4 +5,8 @@ import kotlinx.parcelize.Parcelize
 import ru.android.assistantapp.detailstask.TaskState
 
 @Parcelize
-data class Task(val name: String, var state: TaskState = TaskState.Default) : Parcelable
+data class Task(
+    val name: String,
+    var state: TaskState = TaskState.Default,
+    var isFinished: Boolean = false
+) : Parcelable

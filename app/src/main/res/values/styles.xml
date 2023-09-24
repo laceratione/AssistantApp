@@ -43,6 +43,10 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="style_text_14.Regular">
+        <item name="fontFamily">@font/stolzl_regular</item>
+    </style>
+
     <style name="style_text_14.Blue">
         <item name="android:textColor">@color/blue_link</item>
     </style>
